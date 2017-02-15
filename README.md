@@ -61,10 +61,10 @@ Create config.json
 | baseline        | string             | url to be used as baseline (https://example.com) |
 | comparison      | string             | url to be used as comparison (https://test.example.com) |
 | pages           | array              | array of objects for each page |
-| - name          | string             | name of the page, used as filename |
-| - path          | string             | path where the webpage is to be found |
-| - timeout       | integer (optional) | ms to wait before taking the screenshot after page is loaded (default 1000ms)|
-| - customScript  | string (optional)  | Javascript to be inserted in the webpage, see [evaluateJavaScript](http://phantomjs.org/api/webpage/method/evaluate-java-script.html) |
+| -name          | string             | name of the page, used as filename |
+| -path          | string             | path where the webpage is to be found |
+| -timeout       | integer (optional) | ms to wait before taking the screenshot after page is loaded (default 1000ms)|
+| -customScript  | string (optional)  | Javascript to be inserted in the webpage, see [evaluateJavaScript](http://phantomjs.org/api/webpage/method/evaluate-java-script.html) |
 | widths          | array (optional)   | array of viewport widths |
 | username        | string (optional)  | see login |
 | password        | string (optional)  | see login |
