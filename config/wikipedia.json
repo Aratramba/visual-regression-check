@@ -1,0 +1,9 @@
+{
+  "project": "wikipedia.com",
+  "baseline": "https://en.wikipedia.org/wiki",
+  "comparison": "https://en.wikipedia.org/wiki",
+  "widths": [360, 768, 1300],
+  "pages" : [
+    { "name": "random", "path": "/Special:Random" }
+  ]
+}
