@@ -16,40 +16,41 @@ phantomjs capture.js config/wikipedia.json; node diff.js config/wikipedia.json
 -
 
 ## Config
-1. Create config.json
+Create config.json
 
-    ```json
-    {
-      "project": "myproject.com",
-      "baseline": "http://www.example.com",
-      "comparison": "http://test.example.com",
-      "pages": [
-        { "name": "homepage", "path": "/" }
-      ]
+```json
+{
+  "project": "myproject.com",
+  "baseline": "http://www.example.com",
+  "comparison": "http://test.example.com",
+  "pages": [
+    { "name": "homepage", "path": "/" },
+    { "name": "about", "path": "/about" },
+  ]
+}
+```
+
+```json
+{
+  "project": "myproject.com",
+  "username": "username",
+  "password": "password",
+  "baseline": "https://www.example.com",
+  "comparison": "https://test.example.com",
+  "widths": [360, 768, 1300],
+  "pages": [
+    { 
+        "name": "homepage", 
+        "path": "/", 
+        "timeout": 0,
+        "customScript": "function() { console.log('hello from custom script'); }" 
+    },{ 
+        "name": "login", 
+        "path": "/login"
     }
-    ```
-    
-    ```json
-    {
-      "project": "myproject.com",
-      "username": "username",
-      "password": "password",
-      "baseline": "https://www.example.com",
-      "comparison": "https://test.example.com",
-      "widths": [360, 768, 1300],
-      "pages": [
-        { 
-            "name": "homepage", 
-            "path": "/", 
-            "timeout": 0,
-            "customScript": "function() { console.log('hello from custom script'); }" 
-        },{ 
-            "name": "login", 
-            "path": "/login"
-        }
-      ]
-    }
-    ```
+  ]
+}
+```
 
 -
 
